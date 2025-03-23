@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/cart-global.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../js/main.js">
     <title>El Gambino Restaurant - Contacts</title>
 </head>
 <body>
     <div class="header">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="../image/logo.svg" ></a>
-            </div>
-
-
-            <div class="menuTaskBar">
-                <nav class="navbar navbar-expand-md navbar-dark">
-                    <div class="container">
-                        <ul>
-                            <li ><a href="../html/index.html">Home</a></li>
-                            <li ><a href="../html/menu.html">Menu</a></li>
-                            <li ><a href="../html/aboutus.html">About Us</a></li>
-                            <li ><a href="#offer-links">Offer & Discounts</a></li>
-                            <li ><a href="#">Space</a></li>
-                            <li ><a href="../html/contacts.html">Contacts</a></li>
-                        </ul>
+        <nav class="navbar navbar-expand-sm d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <div class="logo"> 
+                    <a href="index.html"><img src="../image/logo.svg" ></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+                    <li><a href="../html/index.html" class="nav-link  link-dark">Home</a></li>
+                    <li><a href="../html/menu.html" class="nav-link link-dark">Menu</a></li>
+                    <li><a href="../html/aboutus.html" class="nav-link px-2 link-dark">About Us</a></li>
+                    <li><a href="../html/index.html#offer-links" class="nav-link px-2 link-dark">Offer & Discounts</a></li>
+                    <li><a href="../html/aboutus.html#space-links" class="nav-link px-2 link-dark">Space</a></li>
+                    <li><a href="../html/contacts.html" class="nav-link px-2 link-dark">Contacts</a></li>
+                </ul>
+                <div class="text">
+                    <div class="shopping" >
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+                        <span class="quantity">0</span>  
                     </div>
-                </nav>
+                    <button type="button" class="btn  me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+              </div>
             </div>
-        </header>    
+          </nav>
+                        <div class="overlay"></div>
+                        <div class="cart-popover">
+                        <div class="cart-header">
+                             <h3>Shopping Cart</h3>
+                            <div class="close-cart">×</div>
+                        </div>
+                        <div class="cart-items">
+               
+                        </div>
+                            <div class="cart-summary">
+                            <div class="total-price">Total: <span class="total">0</span> $</div>
+                                <button class="checkout-btn">Payment</button>
+                            </div>
+                        </div>
     </div>
-
     <section class="title">
         <h2>Contacts</h2>
         <h4>Home > Locations</h4>
@@ -122,6 +148,165 @@
             </div>
         </div>
     </div>
+    <!-- asked awswer -->
+    <div class="container-content" style="display: flex; justify-content: space-between;">
+        <!-- Cột 1 -->
+        <div class="content-column" style="width: 48%;">
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>What type of cuisine does your restaurant offer?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    Our restaurant offers a variety of delicious Mediterranean dishes, including Italian and Spanish specialties.
+                </div>
+            </div>
+    
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>Do you offer delivery?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    Yes, we offer delivery within a 5-mile radius of our restaurant. Delivery fees may apply.
+                </div>
+            </div>
+    
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>Is there a dress code?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    We ask that all guests dress in a neat and presentable manner.
+                </div>
+            </div>
+    
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>What are the hours of operation?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    All our restaurants are open from 12:00pm to 01:00am, seven days a week.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Cột 2 -->
+        <div class="content-column" style="width: 48%;">
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>What payment methods do you accept?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    We accept cash, credit cards, and Apple Pay.
+                </div>
+            </div>
+    
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>Do you have a children's menu?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    Yes, we do have a children's menu.
+                </div>
+            </div>
+    
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>Is there parking available?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    Yes, there is ample parking available in the adjacent lot.
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-question" onclick="toggleAnswer(this)">
+                    <span>Do you offer take-out?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="content-answer">
+                    Yes, take-out orders are available. Please call ahead for pick-up.
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- address -->
+   
+   <div class="container-address">
+           
+           <div class="address-column">
+           <div class="address-googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9862695352404!2d-74.04257828954873!3d40.63018477128672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff18c3fc6d5%3A0x1b933ab31b1e1a4c!2s8020%20Shore%20Rd%2C%20Brooklyn%2C%20NY%2011209%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1740843780218!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+           </div> 
+           <div class="info">
+               <h3>El Gambino in New York</h3>
+               <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                 8020 Shore Rd. Brooklyn, NY 11209</p>
+               <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+                +1 (234) 567 89 01 </p>
+               <p>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>
+               Working hours: Mon-Sun 12 pm - 01 am.</p>         
+              </div>
+       </div>
+       
+       <div class="address-column">
+           <div class="address-googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.6587475662513!2d-71.1299713894388!3d42.243102971083836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37e5b86aad0c7%3A0x35d35cc9ade23aec!2sMartini%20Playground%2C%201015%20Truman%20Pkwy%2C%20Hyde%20Park%2C%20MA%2002136%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1740843830755!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           </div>
+           <div class="info">
+               <h3>El Gambino in Boston</h3>
+               <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                 1015 Truman Hwy, Boston, MA 02154</p>
+               <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+                 +1 (234) 567 89 02 </p>
+               <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                  </svg>
+                 Working hours: Mon-Sun 12 pm - 01 am</p>
+           </div>
+       </div>
+       
+       <div class="address-column">
+           <div class="address-googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.8538824590573!2d-87.67283768946565!3d41.852971771124515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2da65ecc1d6d%3A0xe4ee292a4a6e72ec!2s1743%20W%2021st%20Pl%2C%20Chicago%2C%20IL%2060608%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1740843889846!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+           <div class="info">
+               <h3>El Gambino in Chicago</h3>
+               <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                 1743 W 21st Pl, Chicago, IL 60608</p>
+               <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                +1 (234) 567 89 03</p>
+               <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                </svg>
+                Working hours: Mon-Sun 12 pm - 01 am.</p>
+           </div>
+       </div>
+   </div>
 
     <footer class="container-fluid">
         <div class="parking">
@@ -176,7 +361,7 @@
             </div>
             <div class="col-md-3">
                 <h3>Contact us</h3>
-                <span><a href="#">+1 (234) 567 89 00</a></span>
+                <span><a href="#">(+84) 935 765 186</a></span>
                 <span><a href="#">el.gambino@email.com</a></span>
                 <span><a href="#">Working Hours:
                     Mon-Sun 12 pm - 01 am</a></span>
@@ -186,5 +371,9 @@
             <span>Ho Chi Minh City - 2025</span>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart-global.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

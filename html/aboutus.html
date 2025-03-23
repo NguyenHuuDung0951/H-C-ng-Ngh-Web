@@ -3,31 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/cart-global.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
     <title>About Us</title>
-
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="../image/logo.svg" ></a>
-        </div>
-        <div class="menuTaskBar">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <div class="container">
-                    <ul>
-                        <li ><a href="../html/index.html">Home</a></li>
-                        <li ><a href="../html/menu.html">Menu</a></li>
-                        <li ><a href="../html/aboutus.html">About Us</a></li>
-                        <li ><a href="#offer-links">Offer & Discounts</a></li>
-                        <li ><a href="#">Space</a></li>
-                        <li ><a href="../html/contacts.html">Contacts</a></li>
-                    </ul>
+    <div class="header">
+        <nav class="navbar navbar-expand-sm d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <div class="logo"> 
+                    <a href="index.html"><img src="../image/logo.svg" ></a>
                 </div>
-            </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+                    <li><a href="../html/index.html" class="nav-link  link-dark">Home</a></li>
+                    <li><a href="../html/menu.html" class="nav-link link-dark">Menu</a></li>
+                    <li><a href="../html/aboutus.html" class="nav-link px-2 link-dark">About Us</a></li>
+                    <li><a href="../html/index.html#offer-links" class="nav-link px-2 link-dark">Offer & Discounts</a></li>
+                    <li><a href="../html/aboutus.html#space-links" class="nav-link px-2 link-dark">Space</a></li>
+                    <li><a href="../html/contacts.html" class="nav-link px-2 link-dark">Contacts</a></li>
+                </ul>
+                <div class="text">
+                    <div class="shopping" >
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+                        <span class="quantity">0</span>  
+                    </div>
+                    <button type="button" class="btn  me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+                        <div class="overlay"></div>
+                        <div class="cart-popover">
+                        <div class="cart-header">
+                             <h3>Shopping Cart</h3>
+                            <div class="close-cart">×</div>
+                        </div>
+                        <div class="cart-items">
+               
+                        </div>
+                            <div class="cart-summary">
+                            <div class="total-price">Total: <span class="total">0</span> VND</div>
+                                <button class="checkout-btn">Payment</button>
+                            </div>
+                        </div>
+    </div>
+        <div class="content">
+            <!-- Section About -->
+            <div class="section-about">
+                <div class="title">
+                    <h2>About Us</h2>
+                    <h4>Home > <span>About us</span></h4>
+                </div>
+            </div>
+
+            <!-- Section Story -->
+            <div class="section-story">
+                <div class="section-story__desc">
+                    <div class="section-story__about">
+                        <p class ="str">- OUT STORY -</p>
+                        <h2 class="story-title">Learn More About Our History</h2>
+                        <p class="story-subtitle">For more than 40 years we have been delighting our guests with delicious dishes.</p>
+                    </div>
+
+                    <div class="section-story__timeline">
+                        <div class="timeline-item">
+                            <span class="year">1978</span>
+                            <p>Our founder, Peter Munijo, opened his first restaurant, Muelo, in downtown New York.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">1997</span>
+                            <p>The Muelo restaurant was renamed into El Gambino and focused on Italian and Spanish cuisine.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">2005</span>
+                            <p>We expanded our chain and opened two more El Gambino restaurants, in Boston and Chicago.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">2020</span>
+                            <p>TimeToGo named our chain "one of the best Italian restaurant chains in the United States".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="width: 1150px;">
+                    <div class="section-story__img">
+                        <img src="../image/meals_aboutus.jpg" alt="MeanImages" class="img-fluid w-100">
+                    </div>
+    
+                    <div class="container text-center p-0">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <ul class="list-group text-start">
+                                    <li class="list-group-item">🔸 Our restaurant provides authentic Italian and Spanish cuisine;</li>
+                                    <li class="list-group-item">🔸 Our chefs have mastered the art of creating Mediterranean dishes;</li>
+                                    <li class="list-group-item">🔸 We offer a wide variety of dishes including classic favorites, regional specialties, and contemporary recipes.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <ul class="list-group text-start">
+                                    <li class="list-group-item">🔸 Our restaurant provides authentic Italian and Spanish cuisine;</li>
+                                    <li class="list-group-item">🔸 Our chefs have mastered the art of creating Mediterranean dishes;</li>
+                                    <li class="list-group-item">🔸 We offer a wide variety of dishes including classic favorites, regional specialties, and contemporary recipes.</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="row text-start">
+                            <p class="description mt-4">
+                                Our restaurant is a great place to enjoy a unique and delicious dining experience! 
+                                We offer a wide selection of traditional Mediterranean dishes, from classic Spanish tapas to Italian-style pastas. 
+                                Our ingredients are always fresh, and our chefs are dedicated to creating flavorful dishes that tantalize the taste buds. 
+                                We also offer a full bar, with a selection of craft beers, wines, and signature cocktails.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Description -->
+            <section class="Description">
+                <div class="container-full">
+                    <div class="row">
+                        <!-- Cột hình ảnh -->
+                        <div class="col-md-6 p-0">
+                            <img src="../image/bg-about.jpg" alt="Restaurant Image" class="img-fluid w-100">
+                        </div>
+
+                        <!-- Cột nội dung -->
+                        <div class="col-md-6 d-flex align-items-center p-0" style="background-color: #ffffff;">
+                            <div class="content section-desc" style="margin-left: 180px;">
+                                <h3>- Description -</h3>
+                                <h2 class="section-desc__title">About Our Restaurant</h2>
+                                <p class="fw-bold section-desc__about">All the best dishes from the Mediterranean cuisine.</p>
+                                <p class="section-desc__info" style="max-width: 500px;">
+                                    El Gambino is a chain of three top-rated Italian restaurants, conveniently located in 
+                                    New York, Boston, and Chicago. For four decades, El Gambino restaurant has been serving the 
+                                    local community with the world's famous cuisines. Our diversified menu has something 
+                                    special to meet any taste.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-start mb-2">
+                                        🍃 Signature Mediterranean dishes;
+                                    </li>
+                                    <li class="d-flex align-items-start mb-2">
+                                        🍃 Many vegan and vegetarian options;
+                                    </li>
+                                    <li class="d-flex align-items-start mb-2">
+                                        🍃High quality of products in all our restaurants.
+                                    </li>
+                                </ul>
+                                <p class="section-desc__info" style="max-width: 500px;">
+                                    Our atmosphere is warm and inviting, perfect for any occasion, whether you're looking for a 
+                                    romantic dinner or a casual night out with friends. Come and experience the exquisite 
+                                    flavors of the Mediterranean with us!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Section Team -->
+            <div class="section-team">
+                <div class="section-team__meet">
+                    <p class="section-team__title">- OUR TEAM -</p>
+                    <h2 class="section-team__heading">Meet Our Professional Team</h2>
+                    <p class="section-team__description">
+                        Our team is our pride. Each of the team members is dedicated to serving the best dishes.
+                    </p>
+                </div>
+
+                <div class="section-team__slider">
+                    <button onclick="scrollLeft()"class="arrow left">&#10094;</button>
+
+                    <!-- Members -->
+                    <div class="section-team__member">
+                        <div class="member">
+                            <img src="../image/chef1.jpg" alt="Chef1">
+                            <div class="member-info">
+                                <h3>Peter Manujo</h3>
+                                <p>Chef</p>
+                            </div>  
+                        </div>
+                        
+                        <div class="member">
+                            <img src="../image/chef2.jpg" alt="Chef2">
+                            <div class="member-info">
+                                <h3>Jack Porter</h3>
+                                <p>Cook</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <img src="../image/chef3.jpg" alt="Chef3">
+                            <div class="member-info">
+                                <h3>Helen Rudash</h3>
+                                <p>Sous Chef</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="scrollRight()"class="arrow right">&#10095;</button>
+                </div>
+
+                  <!-- Work with us -->
+                  <div class="work-with-us">
+                    <h3>Want to Work With Us?</h3>
+                    <p>
+                        If you want to work in a leading top-rated restaurant, find a vibrant, engaging career, 
+                        and join our team - send CV to <a href="#" class="email">el.gambino@email.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Vacancies -->
+            <div class="section-vacancies">
+                <div class="section-vacancies__meet">
+                    <p class="section-vacancies__title">- Vacancies -</p>
+                    <h2 class="section-vacancies__heading">Open Vacancies</h2>
+                    <p class="section-vacancies__description">
+                        Apply to one of our available vacancies.
+                    </p>
+                </div>
+
+                <!-- Vacancy List -->
+                <div class="vacancy-list">
+                    <!-- Vacancy 1 -->
+                    <div class="vacancy">
+                        <div class="vacancy-icon">
+                            <img src="../image/icon4.svg" alt="Sous Chef">
+                        </div>
+                        <div class="vacancy-info">
+                            <h3>Sous Chef</h3>
+                            <p class="salary">$4.500 / month</p>
+                        </div>
+
+                        <div class="vacancy-item">
+                            <ul>
+                                <li>📍 El Gambino NY</li>
+                                <li>⏳ 20 hours per week</li>   
+                                <li>⭐ 5+ years experience</li>
+                            </ul>
+                        </div>
+
+                        <a href="contacts.html" class="apply-btn-link">
+                            <button class="apply-btn">Send CV</button>
+                        </a>
+                    </div>
+        
+                    <!-- Vacancy 2 -->
+                    <div class="vacancy">
+                        <div class="vacancy-icon">
+                            <img src="../image/icon_whisk.svg" alt="Cook">
+                        </div>
+
+                        <div class="vacancy-info">
+                            <h3>Cook</h3>
+                            <p class="salary">$3.500 / month</p>
+                        </div>
+
+                        <div class="vacancy-item">
+                            <ul>
+                                <li>📍 El Gambino Boston</li>
+                                <li>⏳ 40 hours per week</li>
+                                <li>⭐ 2+ years experience</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contacts.html" class="apply-btn-link">
+                            <button class="apply-btn">Send CV</button>
+                        </a>
+                    </div>
+        
+                    <!-- Vacancy 3 -->
+                    <div class="vacancy">
+                        <div class="vacancy-icon">
+                            <img src="../image/icon2.svg" alt="Cook">
+                        </div>
+                        <div class="vacancy-info">
+                            <h3>Cook</h3>
+                            <p class="salary">$3.500 / month</p>
+                        </div>
+
+                        <div class="vacancy-item">
+                            <ul>
+                                <li>📍 El Gambino Chicago</li>
+                                <li>⏳ 40 hours per week</li>
+                                <li>⭐ 2+ years experience</li>
+                            </ul>
+                        </div>
+                        <a href="contacts.html" class="apply-btn-link">
+                            <button class="apply-btn">Send CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Space -->
+            <div class="section-space" id="space-links">
+                <div class="section-space-text">
+                    <div class="section-space-title">
+                        <p class="section-space-index">- OUR SPACE -</p>
+                        <h2 class="section-space-heading">Beautiful Views of Our Restaurants</h2>
+                        <p></p>
+                        <p class="section-space-subtitle">Spaciousness and Mediterranean sophistication in our interiors.</p>
+                    </div>
+                    <div class="section-space-content">
+                        <p>
+                            All El Gambino restaurants have enough space to hold any events, ranging from birthday parties, sweet 16th, 
+                            anniversaries, to large corporate events, university-related parties, and weddings. Celebrate your special 
+                            event or private party and surprise your guests with our culinary delights.
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <img src="../IMAGE/space2.jpg" class="img-fluid" alt="" style="height: 100%;">
+                        </div>
+                        <div class="col-md-4 d-flex flex-column gap-2">
+                            <img src="../IMAGE/space1.jpg" class="img-fluid" alt="" >
+                            <img src="../IMAGE/space4.jpg" class="img-fluid" alt="" >
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../IMAGE/space3.jpg" class="img-fluid" alt="" style="height: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-booknow">
+                    <div class="text-white text-center py-8 mt-8">
+                        <p class="section-booknow-index">
+                            - Book Now -
+                        </p>
+                        <h2 class="text-3xl font-bold mt-2 ">
+                            What Are You Still Waiting for?
+                        </h2>
+                        <p class="mt-2">
+                            Book a table in our restaurant right now!
+                        </p>
+                        </div>
+                    </div>
+            </div>
         </div>
+        
+        <!-- Footer -->
         <footer class="container-fluid">
             <div class="parking">
                 <div class="col-md-4">
@@ -81,7 +415,7 @@
                 </div>
                 <div class="col-md-3">
                     <h3>Contact us</h3>
-                    <span><a href="#">+1 (234) 567 89 00</a></span>
+                    <span><a href="#">(+84) 935 765 186</a></span>
                     <span><a href="#">el.gambino@email.com</a></span>
                     <span><a href="#">Working Hours:
                         Mon-Sun 12 pm - 01 am</a></span>
@@ -91,5 +425,9 @@
                 <span>Ho Chi Minh City - 2025</span>
             </div>
         </footer>
+    <script src="../js/aboutus.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart-global.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
