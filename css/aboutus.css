@@ -31,7 +31,10 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #ff6347 !important;
+  }
 .navbar-nav li a:hover {
     color: rgb(234, 80, 80) !important;
 }

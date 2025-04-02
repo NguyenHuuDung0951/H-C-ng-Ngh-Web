@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">  
+    <link rel="stylesheet" href="../css/cart-global.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-xl d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+            <div class="container-fluid">
+                <div class="logo"> 
+                    <a href="../index.html"><img src="../image/logo.svg" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="../html/menu.html" class="nav-link">Menu</a></li>
+                        <li><a href="../html/aboutus.html" class="nav-link">About Us</a></li>
+                        <li><a href="../index.html#offer-links" class="nav-link">Offer & Discounts</a></li>
+                        <li><a href="../html/aboutus.html#space-links" class="nav-link">Space</a></li>
+                        <li><a href="../html/contacts.html" class="nav-link">Contacts</a></li>
+                    </ul>
+
+                    <div class="text">
+                        <div class="shopping">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                            </svg>
+                            <span class="quantity">0</span>
+                        </div>
+
+                        <div class="auth-buttons">
+                            <button type="button" class="btn-login" onclick="window.location.href='../html/login-signup.html'">Đăng Nhập</button>
+                            <button type="button" class="btn-signup" onclick="window.location.href='../html/login-signup.html?tab=signup'">Đăng Ký</button>
+                        </div>
+
+                        <div class="user-dropdown" id="user-dropdown">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-person"></i> Tài khoản</a></li>
+                                <li><a href="#"><i class="bi bi-clock-history"></i> Lịch sử mua hàng</a></li>
+                                <li><a href="#" id="logout-btn"><i class="bi bi-box-arrow-right"></i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+        <div class="cart-popover">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <div class="close-cart">×</div>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-summary">
+                <div class="total-price">
+                    Total: <span class="total">0</span> $
+                </div>
+                <button class="checkout-btn">Payment</button>
+            </div>
+        </div>
+    </header>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart-global.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    
+</body>
+</html>

@@ -25,12 +25,6 @@ function initCartElements() {
         });
     }
     
-    if (overlay) {
-        overlay.addEventListener('click', () => {
-            body.classList.remove('cart-active');
-        });
-    }
-    
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.cart-popover') && !e.target.closest('.shopping')) {
             body.classList.remove('cart-active');

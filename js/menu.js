@@ -315,7 +315,7 @@ function initApp() {
    displayMenuItems(products);
    setupFilterButtons();
 }
-
+// hien thi list product
 function displayMenuItems(items) {
     const list = document.querySelector('.list');
     if (!list) return;
@@ -329,16 +329,16 @@ function displayMenuItems(items) {
     
     items.forEach((value) => {
         let newDiv = document.createElement('div');
-        newDiv.classList.add('item');
-        newDiv.dataset.category = value.category;
+        newDiv.classList.add('item'); // them ten clas ="item" 
+        newDiv.dataset.category = value.category; // luu thong tin vao category de filter 
         newDiv.innerHTML = `
             <img src="${value.image}">
             <div class="item-info">
                 <div class="title">${value.name}</div>
-                <div class="price">$${value.price.toLocaleString()}</div>
+                <div class="price">$${value.price}</div>
             </div>
             <button onclick="addToCartFromPage(${value.id}, '${value.name}', ${value.price}, '${value.image}')">Add To Cart</button>`;
-        list.appendChild(newDiv);
+        list.appendChild(newDiv); // them phan div vao list
     });
 }
 function addToCartFromPage(id, name, price, image) {
@@ -354,7 +354,7 @@ function addToCartFromPage(id, name, price, image) {
   } else {
       console.log('Adding to cart:', product);
       alert(`Added ${name} to cart!`);
-  }
+  }  
 }
 function setupFilterButtons() {
    
